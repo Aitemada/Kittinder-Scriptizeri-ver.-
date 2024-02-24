@@ -1,0 +1,1 @@
+ let opendialogue = ()=> location.href="dialogue.html"

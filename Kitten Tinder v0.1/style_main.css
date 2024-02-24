@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+main{
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    border: none;
+    width: 80px;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    top: 0; 
+}
+
+.background_image{
+    min-width: 100%;
+    max-height: 1442px;
+}
+
+.header_title{
+    text-align: center;
+    margin-top: 3%;
+    font-family: Alex Brush;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-shadow: 0px 4px 4px 0px #00000040;
+    color: #FFFFFF;
+}
+
+.cat_suggestion{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    min-height: 65%;
+    position: absolute;
+    transition: 6s;
+    left: auto;
+}
+
+
+.cat_suggestion .button_cancel:active{
+    animation: flyleft;
+    animation-duration: 5s;
+}
+
+@keyframes flyleft {
+    10% {
+        left: 10px
+    }
+    20% {
+        left: 200px
+    }
+    100% {
+        left: 100000px
+    }
+}
+
+.description_images{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    color: white;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+}
+
+.images{
+    min-width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.buttons{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Scrollbar */
+
+/* ::-webkit-scrollbar {
+    width: 12px;
+    height: 4px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1A1A1A;
+    border-radius: 9em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(43, 43, 43);
+} 
+*/
+
+/* Scrollbar finished */

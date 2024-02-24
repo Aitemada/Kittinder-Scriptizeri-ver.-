@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style_main.css" />
+		<!-- <link rel="icon" href="img/xxx" type="image/x-icon" /> -->
+		<title>Kittinder</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="header_title">Kittinder</h1>
+			<div class="background">
+				<img class="background_image" src="img/bg/bg.svg" alt="background" />
+			</div>
+		</header>
+		<main>
+			<div class="images">
+				<div class="cat_suggestion">
+					<img class="img_cat" src="img/cats/cat1.svg" alt="cat1" />
+					<div class="description_images">Alex, 12</div>
+				</div>
+				<div class="cat_suggestion">
+					<img class="img_cat" src="img/cats/cat1.svg" alt="cat1" />
+					<div class="description_images">Alex, 12</div>
+				</div>
+				<div class="cat_suggestion">
+					<img class="img_cat" src="img/cats/cat1.svg" alt="cat1" />
+					<div class="description_images">Alex, 12</div>
+				</div>
+			</div>
+			<div class="buttons">
+				<button class="button_cancel button" onclick="swipeleft()">
+					<img src="img/buttons/cancel.jpg" alt="Cancel" />
+				</button>
+				<a href="chat.html">
+					<button class="button_chat button">
+						<img src="img/buttons/message.jpg" alt="message" />
+					</button>
+				</a>
+				<button class="button_approve button" onclick="swipe_right()">
+					<img src="img/buttons/confirm.jpg" alt="confirm" />
+				</button>
+			</div>
+		</main>
+		<script src="script_main.js"></script>
+	</body>
+</html>
